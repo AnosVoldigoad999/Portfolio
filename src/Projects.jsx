@@ -43,16 +43,16 @@ export default function Projects (){
     </div>
     <br />
     <div className="project">
-        <img className="port" alt="port"   />
+        <img className="advice" alt="advice"   />
         <div className="projectdes">
-        <h4>My Portfolio Site</h4>
+        <h4>Random advice generator</h4>
         <p>
-            A personal site showing some of my projects, skills and experience to potential clients or employers.
+            An advice generator that works with the <b><a href="https://api.adviceslip.com/">Advice Slip API</a></b> to generate random quotes of advice
         </p>
         <p>
             Built with <a href='https://react.dev/'><b>React</b></a> and <a href='https://en.wikipedia.org/wiki/CSS'><b>CSS</b></a>
         </p>
-        <p><b><a href="https://uzaymah.vercel.app/">Live site<RxExternalLink className="exlink" /></a></b>&nbsp; <b><a href='https://github.com/AnosVoldigoad999/Portfolio'><AiFillGithub className='github' />Github</a></b></p>
+        <p><b><a href="https://advice-generator-three-alpha.vercel.app/">Live site<RxExternalLink className="exlink" /></a></b>&nbsp; <b><a href='https://github.com/AnosVoldigoad999/advice-generator'><AiFillGithub className='github' />Github</a></b></p>
         </div>
     </div>
     <br />
