@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
-import {AiFillGithub} from 'react-icons/ai'
+import {AiFillGithub, AiFillInstagram} from 'react-icons/ai'
 import {RxExternalLink} from 'react-icons/rx'
+import {FaTwitter} from 'react-icons/fa'
+import {BiLogoGmail} from 'react-icons/bi'
 export default function Projects (){
     return<>
 <nav>
@@ -9,7 +11,7 @@ export default function Projects (){
     <Link className='link' to='/'><li>Home</li></Link>
     <Link className='link' to='/about' ><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
-    <Link className='link' to='/contact'><li>Contact</li></Link>
+    <a className='link' href='#contacts'><li>Contact</li></a>
   </ul>
 </nav>
 <main className="projectmain">
@@ -82,6 +84,12 @@ export default function Projects (){
         </p>
         <p><b><a href="https://uzaymah.vercel.app/">Live site<RxExternalLink className="exlink" /></a></b>&nbsp; <b><a href='https://github.com/AnosVoldigoad999/Portfolio'><AiFillGithub className='github' />Github</a></b></p>
         </div>
+    </div>
+    <br />
+    <br />
+    <div id="contacts">
+        <h4>Let's Connect</h4>
+        <p><a href="https://twitter.com/Anos_Voldigoad4"><FaTwitter className="twitter" /></a><a href="mailto:oyedejiuzaymah@gmail.com"><BiLogoGmail className="gmail" /></a><a href="https://www.instagram.com/anosvoldigoad99/"><AiFillInstagram className="instagram" /></a></p>
     </div>
 </main>
     </>

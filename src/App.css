@@ -167,6 +167,12 @@ nav ul li{
   top: 4px;
 }
 
+.twitter, .gmail, .instagram{
+  width: 20px;
+  height: 20px;
+  margin: 0 6px;
+}
+
 /*project*/
 
 /*active*/
