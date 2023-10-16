@@ -285,6 +285,7 @@ nav ul li:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0 30px;
   }
   
   .des{
@@ -373,6 +374,7 @@ nav ul li:hover{
   flex-direction: column-reverse;
   width: 100vw;
   height: 100vh;
+  margin-top: 60px;
   margin-left: -8px;
   margin-bottom: -50px;
   justify-content:center;
