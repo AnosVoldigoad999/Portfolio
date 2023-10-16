@@ -19,17 +19,17 @@ body{
  color: hsl(198, 20%, 13%);
 }
 
-body::-webkit-scrollbar{
-  display: none;
-}
+
 
 nav{
   margin-top: -10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
-  width: 99vw;
+  width: 100vw;
+  margin-left: -8px;
   background-color: white;
 }
 
@@ -80,7 +80,7 @@ nav ul li{
   height: 25px;
   width: 25px;
   margin-top: 2px;
-  margin: 0px 20px ;
+  /*margin: 0px 20px ;*/
 }
 
 .github{
@@ -96,31 +96,69 @@ nav ul li{
   margin-bottom: 100px;
 }
 
+.contacts{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.twitter, .gmail, .instagram{
+  width: 25px;
+  height: 25px;
+}
+
+
+.techs{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 /*project*/
 
 .projectmain{
   align-items: center;
   margin-top: 60px;
   display: flex;
+  width: 100vw;
+  margin-left: -8px;
   flex-direction: column;
   background-color: var(--color);
   color: white;
   height: fit-content;
+  margin-bottom: -50px;
 }
 
 .projectmain a{
   color: white;
 }
 
-.port{
+
+.screenshots{
   width: 100%;
-  height: 70%;
-  content: url(../public/PICS/portfolio.png);
-  border-radius: 10px;
-  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 0 0 5px white;
+  display: block;
+  margin: 0 auto;
 }
 
-.intro{
+/*.project .imga{
+  border: 1px solid red;
+  width: 100%;
+}
+
+.screenshots{
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  object-fit: contain;
+  border: 2px solid green;
+}*/
+
+/*.intro{
   width: 100%;
   height: 70%;
   content: url(../public/PICS/intro.png);
@@ -134,7 +172,7 @@ nav ul li{
   content: url(../public/PICS/advice.png);
   border-radius: 10px;
   object-fit: contain;
-}
+}*/
 
 .project{
   display: flex;
@@ -142,12 +180,16 @@ nav ul li{
   width: 75%;
   height: 600px;
   align-items: center;
- 
+  margin-bottom: 200px;
 }
 
 .project .projectdes{
   width: 50%;
   text-align: center;
+}
+
+.project p{
+  line-height: 25px;
 }
 
 .project h4{
@@ -167,13 +209,49 @@ nav ul li{
   top: 4px;
 }
 
-.twitter, .gmail, .instagram{
-  width: 20px;
-  height: 20px;
-  margin: 0 6px;
+.menu{
+  display: none;
 }
 
 /*project*/
+
+
+/*about*/
+
+.aboutmain{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -8px;
+  margin-bottom: -50px;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--color);
+  color: white;
+}
+
+.aboutmain .person{
+  margin-left: 10%;
+  width: 22%;
+  height: 50%;
+  border-radius: 500px;
+  box-shadow: 0 0 5px white;
+}
+
+.aboutmain a{
+  color: white;
+}
+
+
+
+
+/*about*/
+
+.mobilemenu{
+  display: none;
+}
 
 /*active*/
 .logo:hover{
@@ -189,5 +267,176 @@ nav ul li:hover{
 }
 
 
+.screenshots:hover{
+  width: 99%;
+}
+
+.menu:hover{
+  cursor: pointer;
+}
+
+
 
 /*active*/
+
+
+
+/*mobile*/
+@media (max-width:800px) {
+
+  nav{
+    padding: 0 25px;
+  }
+  .logo{
+    margin-top: 25px;
+    font-size: 1rem;
+    margin-left: 0px;
+  }
+
+  nav ul{
+    display: none;
+  }
+  
+  .menu{
+    display: block;
+    color: var(--color);
+    width: 30px;
+    height: 30px;
+  }
+
+  .main{
+    margin: 130px auto;
+    display: flex;
+    width: 100vw;
+    margin-left: -8px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .des{
+    width: 100%;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .des a{
+    color: var(--color);
+  }
+  
+  .html, .css, .react, .js{
+    position: relative;
+    top: 5px;
+    height: 25px;
+    width: 100%;
+    margin-top: 2px;
+    /*margin: 0px 20px ;*/
+  }
+  
+ 
+  
+  
+  
+  .person{
+    width: 60%;
+    margin-bottom: 0px;
+  }
+  
+  .contacts{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .github, .twitter, .gmail, .instagram{
+    width: 100%;
+    height: 25px;
+  }
+  
+  
+  .techs{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .mobilemenu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 55%;
+    right: 50%;
+    top: 32vh;
+    height: 40vh;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    box-shadow: 0 0 4px var(--color);
+  }
+
+
+  .mobilemenu ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .mobilemenu ul li{
+    margin-left: -20px;
+  }
+
+
+  /*about*/
+
+.aboutmain{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -8px;
+  margin-bottom: -50px;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--color);
+  color: white;
+  text-align: center;
+}
+
+.aboutmain .des{
+  width: 100%;
+}
+
+.aboutmain .person{
+  margin-left: 0;
+  width: 45%;
+  height: fit-content;
+  border-radius: 500px;
+  box-shadow: 0 0 5px white;
+}
+
+.aboutmain a{
+  color: white;
+}
+
+
+
+
+/*about*/
+
+
+}
+
+
+
+
+
+
+
+/*mobile*/
