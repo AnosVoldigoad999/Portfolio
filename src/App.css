@@ -287,6 +287,8 @@ nav ul li:hover{
     text-align: center;
     padding: 0 30px;
   }
+
+  
   
   .des{
     width: 100%;
@@ -337,6 +339,7 @@ nav ul li:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 0.9rem;
   }
   
   .mobilemenu{
