@@ -145,35 +145,6 @@ nav ul li{
   margin: 0 auto;
 }
 
-/*.project .imga{
-  border: 1px solid red;
-  width: 100%;
-}
-
-.screenshots{
-  width: 100%;
-  height: 70%;
-  border-radius: 10px;
-  object-fit: contain;
-  border: 2px solid green;
-}*/
-
-/*.intro{
-  width: 100%;
-  height: 70%;
-  content: url(../public/PICS/intro.png);
-  border-radius: 10px;
-  object-fit: contain;
-}
-
-.advice{
-  width: 100%;
-  height: 70%;
-  content: url(../public/PICS/advice.png);
-  border-radius: 10px;
-  object-fit: contain;
-}*/
-
 .project{
   display: flex;
   flex-direction: column;
@@ -235,7 +206,7 @@ nav ul li{
 .aboutmain .person{
   margin-left: 10%;
   width: 22%;
-  height: 50%;
+  height: fit-content;
   border-radius: 500px;
   box-shadow: 0 0 5px white;
 }
@@ -346,10 +317,11 @@ nav ul li:hover{
   }
   
   .contacts{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    
   }
   
   .github, .twitter, .gmail, .instagram{
@@ -359,10 +331,10 @@ nav ul li:hover{
   
   
   .techs{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .mobilemenu{
@@ -431,12 +403,78 @@ nav ul li:hover{
 /*about*/
 
 
+/*project*/
+
+.projectmain{
+  align-items: center;
+  margin-top: 60px;
+  display: flex;
+  width: 100vw;
+  margin-left: -8px;
+  flex-direction: column;
+  background-color: var(--color);
+  color: white;
+  height: fit-content;
+  margin-bottom: -50px;
+}
+
+.projectmain a{
+  color: white;
 }
 
 
+.screenshots{
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 5px white;
+  display: block;
+  margin: 0 auto;
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 200px;
+}
+
+.project .projectdes{
+  width: 100%;
+  text-align: center;
+}
+
+.project p{
+  line-height: 25px;
+}
+
+.project h4{
+  text-align: center;
+}
+
+.project .github{
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 4px;
+  margin: 0 4px;
+}
+
+.project .exlink{
+  position: relative;
+  top: 4px;
+}
+
+.menu{
+  display: none;
+}
+
+/*project*/
 
 
-
+}
 
 
 /*mobile*/
