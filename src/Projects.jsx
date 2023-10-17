@@ -2,9 +2,9 @@ import { Link } from "react-router-dom"
 import {AiFillGithub, AiOutlineMenu} from 'react-icons/ai'
 import {RxExternalLink} from 'react-icons/rx'
 import { useEffect } from "react"
-export default function Projects ({showMenu, setShowMenu}){
+export default function Projects ({ check, setCheck}){
     useEffect(()=>{
-        setShowMenu(false)
+        setCheck(false)
       }, [])
     return<>
 <nav>
@@ -14,16 +14,15 @@ export default function Projects ({showMenu, setShowMenu}){
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
   </ul>
- { showMenu &&
-  <div className="mobilemenu">
+  <input type='checkbox' id='check' checked={check} />
+  <div className='mobilemenu'>
   <ul>
     <Link className='link' to='/'><li>Home</li></Link>
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
   </ul>
   </div>
- }
-  <AiOutlineMenu className='menu' onClick={()=>{setShowMenu(!showMenu)}} />
+  <label htmlFor='check'><AiOutlineMenu className='menu' onClick={()=>{setCheck(!check)}} /></label>
 </nav>
 <main className="projectmain">
     <h2>My Portfolio</h2>

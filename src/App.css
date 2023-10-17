@@ -40,6 +40,8 @@ nav{
   margin-left: 20px;
 }
 
+
+
 nav ul{
   display: flex;
   flex-direction: row;
@@ -181,6 +183,10 @@ nav ul li{
   top: 4px;
 }
 
+label{
+  display: none;
+}
+
 .menu{
   display: none;
 }
@@ -251,16 +257,24 @@ nav ul li:hover{
 
 /*active*/
 
-
+#check{
+  display: none;
+}
 
 /*mobile*/
 @media (max-width:800px) {
 
+  label{
+    display: block;
+  }
+
   nav{
     padding: 0 25px;
+    padding-top: 30px;
+    align-items: center;
   }
   .logo{
-    margin-top: 25px;
+    margin-top: 0px;
     font-size: 1rem;
     margin-left: 0px;
   }
@@ -274,11 +288,13 @@ nav ul li:hover{
     color: var(--color);
     width: 30px;
     height: 30px;
+    position: relative;
+    bottom: 10px;
   }
 
   .main{
     margin: 0;
-    margin-top: 30px;
+    margin-top: max(7vh, 30px);
     display: flex;
     width: 100vw;
     margin-left: -8px;
@@ -347,16 +363,24 @@ nav ul li:hover{
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 55%;
-    right: 50%;
-    top: 28.5vh;
+    /*left: 55%;
+    right: 50%;*/
+    right: -200px;
+    top: 0;
+    /*top: 28.5vh;*/
     height: 40vh;
     background-color: white;
-    transform: translate(-50%, -50%);
-    width: 50vw;
+    /*transform: translate(-50%, -50%);*/
+    width: 170px;
     box-shadow: 0 0 4px var(--color);
   }
 
+
+ 
+
+  #check:checked ~ .mobilemenu{
+    right: 0;
+  }
 
   .mobilemenu ul{
     display: flex;
@@ -446,7 +470,7 @@ nav ul li:hover{
   height: 600px;
   align-items: center;
   padding: 0 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .project .projectdes{

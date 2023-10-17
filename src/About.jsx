@@ -1,28 +1,27 @@
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
 import {AiOutlineMenu} from 'react-icons/ai'
-export default function About ({showMenu, setShowMenu}){
+export default function About ({ check, setCheck}){
   useEffect(()=>{
-    setShowMenu(false)
+    setCheck(false)
   }, [])
 return<>
 <nav>
-<h1 className='logo'>Uzaymah.dev</h1>
-<ul>
-<Link className='link' to='/'><li>Home</li></Link>
-<Link className='link' to='/about'><li>About</li></Link>
-<Link className='link' to='/projects'><li>Projects</li></Link>
-</ul>
-{ showMenu &&
-<div className="mobilemenu">
-<ul>
-<Link className='link' to='/'><li>Home</li></Link>
-<Link className='link' to='/about'><li>About</li></Link>
-<Link className='link' to='/projects'><li>Projects</li></Link>
-</ul>
-</div>
-}
-<AiOutlineMenu className='menu' onClick={()=>{setShowMenu(!showMenu)}} />
+  <h1 className='logo'>Uzaymah.dev</h1>
+  <ul>
+    <Link className='link' to='/'><li>Home</li></Link>
+    <Link className='link' to='/about'><li>About</li></Link>
+    <Link className='link' to='/projects'><li>Projects</li></Link>
+  </ul>
+  <input type='checkbox' id='check' checked={check} />
+  <div className='mobilemenu'>
+  <ul>
+    <Link className='link' to='/'><li>Home</li></Link>
+    <Link className='link' to='/about'><li>About</li></Link>
+    <Link className='link' to='/projects'><li>Projects</li></Link>
+  </ul>
+  </div>
+  <label htmlFor='check'><AiOutlineMenu className='menu' onClick={()=>{setCheck(!check)}} /></label>
 </nav>
 <main className="aboutmain">
   <div className="des">

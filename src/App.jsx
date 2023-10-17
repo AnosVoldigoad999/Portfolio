@@ -12,23 +12,21 @@ import {FaTwitter} from 'react-icons/fa'
 import {BiLogoGmail} from 'react-icons/bi'
 import { useState, useEffect } from 'react'
 export default function App (){
-  const [showMenu, setShowMenu] = useState(false)
+  const [check, setCheck] = useState(false)
   window.addEventListener("scroll", ()=>{
-    setShowMenu(false)
+    setCheck(false)
   })
   return <>
   <Routes>
-   <Route path='/' element={<Home showMenu={showMenu} setShowMenu={setShowMenu} />} />
-   <Route path='/about' element={<About showMenu={showMenu} setShowMenu={setShowMenu} />} />
-   <Route path='/contact' element={<Contact />} />
-   <Route path='/projects' element={<Projects showMenu={showMenu} setShowMenu={setShowMenu} />} />
+   <Route path='/' element={<Home check={check} setCheck={setCheck}  />} />
+   <Route path='/about' element={<About check={check} setCheck={setCheck} />} />
+   <Route path='/projects' element={<Projects check={check} setCheck={setCheck} />} />
   </Routes>
   </>
 }
-
-function Home ({showMenu, setShowMenu}){
+function Home ({ check, setCheck}){
   useEffect(()=>{
-    setShowMenu(false)
+    setCheck(false)
   }, [])
   return <>
   <nav>
@@ -38,16 +36,15 @@ function Home ({showMenu, setShowMenu}){
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
   </ul>
- { showMenu &&
-  <div className="mobilemenu">
+  <input type='checkbox' id='check' checked={check} />
+  <div className='mobilemenu'>
   <ul>
     <Link className='link' to='/'><li>Home</li></Link>
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
   </ul>
   </div>
- }
-  <AiOutlineMenu className='menu' onClick={()=>{setShowMenu(!showMenu)}} />
+  <label htmlFor='check'><AiOutlineMenu className='menu' onClick={()=>{setCheck(!check)}} /></label>
 </nav>
   <main className='main'>
   <div className="des">
