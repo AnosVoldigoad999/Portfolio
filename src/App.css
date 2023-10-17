@@ -456,6 +456,7 @@ nav ul li:hover{
   color: white;
   height: fit-content;
   margin-bottom: -50px;
+  padding-bottom: 150px;
 }
 
 .projectmain a{
