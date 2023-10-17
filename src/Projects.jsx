@@ -41,20 +41,6 @@ export default function Projects ({ check, setCheck}){
         </div>
     </div>
     <br />
-    {/*<div className="project">
-        <img className="intro" alt="intro"   />
-        <div className="projectdes">
-        <h4>Intro component with sign-up form</h4>
-        <p>
-            A responsive landing page with a sign-up form for a potential paid service.
-        </p>
-        <p>
-            Built with <a href='https://react.dev/'><b>React</b></a> and <a href='https://en.wikipedia.org/wiki/CSS'><b>CSS</b></a>
-        </p>
-        <p><b><a href="https://intro-component-sable.vercel.app/">Live site<RxExternalLink className="exlink" /></a></b>&nbsp; <b><a href='https://github.com/AnosVoldigoad999/intro-component'><AiFillGithub className='github' />Github</a></b></p>
-        </div>
-    </div>*/}
-    <br />
     <div className="project">
         <a target="_blank" href="https://e-commerce-page-flame.vercel.app/"><img className="screenshots" alt="ecommerce" src="/PICS/ecommerce.png"   /></a>
         <div className="projectdes">
@@ -96,13 +82,20 @@ export default function Projects ({ check, setCheck}){
         <p><b><a target="_blank" href="https://advice-generator-three-alpha.vercel.app/">Live site<RxExternalLink className="exlink" /></a></b>&nbsp; <b><a target="_blank" href='https://github.com/AnosVoldigoad999/advice-generator'><AiFillGithub className='github' />Github</a></b></p>
         </div>
     </div>
-    {/*<br />
     <br />
-
-    <div id="contacts">
-        <h4>Let's Connect</h4>
-        <p><a href="https://twitter.com/Anos_Voldigoad4"><FaTwitter className="twitter" /></a><a href="mailto:oyedejiuzaymah@gmail.com"><BiLogoGmail className="gmail" /></a><a href="https://www.instagram.com/anosvoldigoad99/"><AiFillInstagram className="instagram" /></a></p>
-</div>*/}
+    <div className="project">
+        <a target="_blank" href="https://basic-operations-calculator.vercel.app/"><img className="screenshots" alt="calculator" src="/PICS/calculator.png"  /></a>
+        <div className="projectdes">
+        <h4>Calculator with changeable themes</h4>
+        <p>
+            A very cool calculator with changeable themes, try it out for yourself!. It is a front-end development challenge on <b><a target="blank" href="https://frontendmentor.io">Frontend Mentor</a></b>.
+        </p>
+        <p>
+            Built with <a target="_blank" href='https://react.dev/'><b>React</b></a> and <a target="_blank" href='https://en.wikipedia.org/wiki/CSS'><b>CSS</b></a>
+        </p>
+        <p><b><a target="_blank" href="https://basic-operations-calculator.vercel.app/">Live site<RxExternalLink className="exlink" /></a></b>&nbsp; <b><a target="_blank" href='https://github.com/AnosVoldigoad999/calculator.git'><AiFillGithub className='github' />Github</a></b></p>
+        </div>
+    </div>
 </main>
     </>
 }
