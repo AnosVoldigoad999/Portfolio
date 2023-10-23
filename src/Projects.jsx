@@ -97,7 +97,7 @@ export default function Projects ({ check, setCheck}){
         </div>
     </div>
     <br />
-    <div className="project" style={{marginTop:"250px"}}>
+    <div className="project" style={{marginTop:`${window.innerWidth<=800?'0px':'250px'}`}}>
         <a target="_blank" href="https://todoapp-epic.vercel.app/"><img className="screenshots" alt="calculator" src="/PICS/todo.png"  /></a>
         <div className="projectdes">
         <h4>Todo App</h4>
