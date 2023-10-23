@@ -96,6 +96,20 @@ export default function Projects ({ check, setCheck}){
         <p><b><a target="_blank" href="https://basic-operations-calculator.vercel.app/">Live site<RxExternalLink className="exlink" /></a></b>&nbsp; <b><a target="_blank" href='https://github.com/AnosVoldigoad999/calculator.git'><AiFillGithub className='github' />Github</a></b></p>
         </div>
     </div>
+    <br />
+    <div className="project" style={{marginTop:"250px"}}>
+        <a target="_blank" href="https://todoapp-epic.vercel.app/"><img className="screenshots" alt="calculator" src="/PICS/todo.png"  /></a>
+        <div className="projectdes">
+        <h4>Todo App</h4>
+        <p>
+            A Todo App with changeable themes, filter and drag and drop functionalities. Try it out for yourself!. It is a front-end development challenge on <b><a target="blank" href="https://frontendmentor.io">Frontend Mentor</a></b>.
+        </p>
+        <p>
+            Built with <a target="_blank" href='https://react.dev/'><b>React</b></a> and <a target="_blank" href='https://en.wikipedia.org/wiki/CSS'><b>CSS</b></a>
+        </p>
+        <p><b><a target="_blank" href="https://todoapp-epic.vercel.app/">Live site<RxExternalLink className="exlink" /></a></b>&nbsp; <b><a target="_blank" href='https://github.com/AnosVoldigoad999/todoappEpic.git'><AiFillGithub className='github' />Github</a></b></p>
+        </div>
+    </div>
 </main>
     </>
 }
