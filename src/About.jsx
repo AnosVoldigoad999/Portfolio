@@ -27,7 +27,9 @@ return<>
   <div className="des">
     <h1>Hello, I'm Uzaymah Adeyemi Oyedeji</h1>
     <p>
-      A frontend React developer with skills in HTML, CSS, Javascript and React, based in Nigeria. I'm a human (or robot 👀) who enjoys gaming, watching anime or sleeping in his free time. I started my journey 3 months ago and have enjoyed every part of it ever since. <a href="/projects">Here</a> are some of the projects I've built along the way...
+      I am a frontend developer with experience in HTML, CSS, JavaScript, and React. I specialize in developing responsive websites for various purposes and can work with any design provided to me. I have worked on several personal projects to hone my skills and stay up-to-date with the latest technologies. I am passionate about creating user-friendly interfaces that enhance the user experience.
+
+Please check out my portfolio to learn more about me and my work.
     </p>
   </div>
   <img src="/PICS/me-hehe.jpg" alt="" className="person" />
