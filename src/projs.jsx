@@ -36,6 +36,12 @@ export const projects = [
         imageLink:"/PICS/calculator.png",
         siteLink:"https://basic-operations-calculator.vercel.app/",
         githubLink:"https://github.com/AnosVoldigoad999/calculator.git"   
+    }, {
+        name:"Countries",
+        des:<> A web app that generates information about different Countries, with a search functionality and theme switcher.</>,
+        imageLink:"/PICS/countries.png",
+        siteLink:"https://countries-sigma-navy.vercel.app/",
+        githubLink:"https://github.com/AnosVoldigoad999/Countries.git"   
     }
   ]
 
