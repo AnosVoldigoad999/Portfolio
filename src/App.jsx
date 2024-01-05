@@ -4,6 +4,7 @@ import {ImHtmlFive} from 'react-icons/im'
 import {SiCss3, SiJavascript} from 'react-icons/si'
 import {FaReact} from 'react-icons/fa'
 import {AiFillGithub, AiFillInstagram, AiOutlineMenu} from 'react-icons/ai'
+import { SiFrontendmentor } from "react-icons/si"
 import {Routes, Route, Link} from 'react-router-dom' 
 import About from './About'
 import Projects from './Projects'
@@ -54,7 +55,7 @@ function Home ({ check, setCheck}){
     <a target='blank' href='https://github.com/AnosVoldigoad999'><AiFillGithub className='github' /></a>
     <a target='blank' href="mailto:oyedejiuzaymah@gmail.com"><BiLogoGmail className="gmail" /></a>
     <a target='blank' href="https://twitter.com/Anos_Voldigoad4"><FaTwitter className="twitter" /></a>
-    <a target='blank' href="https://www.instagram.com/anosvoldigoad99/"><AiFillInstagram className="instagram" /></a>
+    <a target='blank' href="https://www.frontendmentor.io/profile/AnosVoldigoad999"><SiFrontendmentor className="instagram" /></a>
     </div>
     <br />
     <p className='techs'>Tech Stack | <a target='blank' href='https://react.dev/'><FaReact className='react' /></a><a target='blank' href='https://en.wikipedia.org/wiki/HTML'><ImHtmlFive className='html' /></a><a target='blank' href='https://en.wikipedia.org/wiki/CSS'><SiCss3 className='css' /></a><a target='blank' href='https://en.wikipedia.org/wiki/JavaScript'><SiJavascript className='js' /></a></p>
