@@ -43,5 +43,8 @@ export default function Projects ({ check, setCheck}){
         </div>
     })}
 </main>
+<footer>
+<a target='blank' href="https://www.frontendmentor.io/profile/AnosVoldigoad999">View more</a>
+</footer>
     </>
 }

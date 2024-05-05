@@ -526,3 +526,23 @@ nav ul li:hover{
 
 
 /*mobile*/
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 7vh;
+  padding: 10px;
+  background-color: var(--color);
+  max-height: 35px;
+}
+
+footer a{
+  color: white;
+
+}
