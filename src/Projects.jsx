@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom"
 import {AiFillGithub, AiOutlineMenu} from 'react-icons/ai'
 import {RxExternalLink} from 'react-icons/rx'
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { projects } from "./projs"
 export default function Projects ({ check, setCheck}){
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const [isAtPageEnd, setIsAtPageEnd] = useState(false)
     useEffect(()=>{
         setCheck(false)
+        
       }, [])
+
+      window.addEventListener("scroll", ()=>{
+        const pagePosition = window.innerHeight + window.scrollY
+        if(pagePosition >= document.body.offsetHeight){
+          setIsAtPageEnd(true)
+        }
+      })
     return<>
 <nav>
   <h1 className='logo'>Uzaymah.dev</h1>
@@ -44,7 +54,7 @@ export default function Projects ({ check, setCheck}){
     })}
 </main>
 <footer>
-<a target='blank' href="https://www.frontendmentor.io/profile/AnosVoldigoad999/solutions">View more</a>
+<a target='blank' href="https://www.frontendmentor.io/profile/AnosVoldigoad999/solutions" style={{opacity:`${isAtPageEnd && 100}`}}>View more</a>
 </footer>
     </>
 }
