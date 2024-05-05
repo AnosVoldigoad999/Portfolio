@@ -44,7 +44,7 @@ export default function Projects ({ check, setCheck}){
     })}
 </main>
 <footer>
-<a target='blank' href="https://www.frontendmentor.io/profile/AnosVoldigoad999">View more</a>
+<a target='blank' href="https://www.frontendmentor.io/profile/AnosVoldigoad999/solutions">View more</a>
 </footer>
     </>
 }
