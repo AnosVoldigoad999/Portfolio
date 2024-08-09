@@ -49,8 +49,16 @@ nav ul{
 }
 
 nav .link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: var(--color);
+  font-weight: 600;
   text-decoration: none;
+}
+
+.download{
+  margin-bottom: 5px;
 }
 
 nav ul li{
@@ -129,15 +137,15 @@ nav ul li{
   width: 100vw;
   margin-left: -8px;
   flex-direction: column;
-  background-color: var(--color);
-  color: white;
+  color: var(--color);
+
   height: fit-content;
   margin-bottom: -50px;
   padding-bottom: 300px;
 }
 
 .projectmain a{
-  color: white;
+  color: var(--color);
 }
 
 
@@ -145,7 +153,8 @@ nav ul li{
   width: 100%;
   max-height: 500px;
   border-radius: 15px;
-  box-shadow: 0 0 5px white;
+  /*box-shadow: 0 0 5px white;*/
+  border: 3px solid var(--color);
   display: block;
   margin: 0 auto;
 }
@@ -208,8 +217,7 @@ label{
   margin-bottom: -50px;
   justify-content:center;
   align-items: center;
-  background-color: var(--color);
-  color: white;
+  color: var(--color);
 }
 
 
@@ -219,11 +227,12 @@ label{
   width: 22%;
   height: fit-content;
   border-radius: 500px;
-  box-shadow: 0 0 5px white;
+  border: 3px solid var(--color);
+  /*box-shadow: 0 0 5px var(--color);*/
 }
 
 .aboutmain a{
-  color: white;
+  color: var(--color);
 }
 
 
@@ -371,6 +380,10 @@ nav ul li:hover{
     justify-content: space-around;
     font-size: 0.9rem;
   }
+
+  #mobileLink{
+    margin-left: -30%;
+  }
   
   .mobilemenu{
     display: flex;
@@ -421,8 +434,7 @@ nav ul li:hover{
   margin-bottom: -50px;
   justify-content:center;
   align-items: center;
-  background-color: var(--color);
-  color: white;
+  color: var(--color);
   text-align: center;
   padding: 0 30px;
   padding-bottom: 20px;
@@ -439,11 +451,11 @@ nav ul li:hover{
   width: 45%;
   height: fit-content;
   border-radius: 500px;
-  box-shadow: 0 0 5px white;
+ border: 3px solid var(--color);
 }
 
 .aboutmain a{
-  color: white;
+  color: var(--color);
 }
 
 
@@ -461,22 +473,21 @@ nav ul li:hover{
   width: 100vw;
   margin-left: -8px;
   flex-direction: column;
-  background-color: var(--color);
-  color: white;
+  color: var(--color);
   height: fit-content;
   margin-bottom: -50px;
   padding-bottom: 150px;
 }
 
 .projectmain a{
-  color: white;
+  color: var(--color);
 }
 
 
 .screenshots{
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0 0 5px white;
+  border: 3px solid var(--color);
   display: block;
   margin: 0 auto;
 }
@@ -538,11 +549,12 @@ footer{
   width: 100vw;
   height: 7vh;
   padding: 10px;
-  background-color: var(--color);
+  background-color: white;
   max-height: 35px;
 }
 
 footer a{
-  color: white;
+  color: var(--color);
   opacity: 0;
+  font-weight: 700;
 }

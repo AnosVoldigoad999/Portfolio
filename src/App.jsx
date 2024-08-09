@@ -5,6 +5,7 @@ import {SiCss3, SiJavascript} from 'react-icons/si'
 import {FaReact} from 'react-icons/fa'
 import {AiFillGithub, AiFillInstagram, AiOutlineMenu} from 'react-icons/ai'
 import { SiFrontendmentor } from "react-icons/si"
+import { FiDownload } from "react-icons/fi";
 import {Routes, Route, Link} from 'react-router-dom' 
 import About from './About'
 import Projects from './Projects'
@@ -36,6 +37,7 @@ function Home ({ check, setCheck}){
     <Link className='link' to='/'><li>Home</li></Link>
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
+    <Link to="https://bit.ly/3YC8ySw" className='link'  target='_blank'><FiDownload className='download' />Resume</Link>
   </ul>
   <input type='checkbox' id='check' checked={check} />
   <div className='mobilemenu'>
@@ -43,6 +45,7 @@ function Home ({ check, setCheck}){
     <Link className='link' to='/'><li>Home</li></Link>
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
+    <Link to="https://bit.ly/3YC8ySw" className='link' id='mobileLink'  target='_blank'><FiDownload className='download' />Resume</Link>
   </ul>
   </div>
   <label htmlFor='check'><AiOutlineMenu className='menu' onClick={()=>{setCheck(!check)}} /></label>

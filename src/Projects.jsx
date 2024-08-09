@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import {AiFillGithub, AiOutlineMenu} from 'react-icons/ai'
 import {RxExternalLink} from 'react-icons/rx'
+import {FiDownload} from 'react-icons/fi'
 import { useEffect, useState } from "react"
 import { projects } from "./projs"
 export default function Projects ({ check, setCheck}){
@@ -24,6 +25,7 @@ export default function Projects ({ check, setCheck}){
     <Link className='link' to='/'><li>Home</li></Link>
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
+    <Link to="https://bit.ly/3YC8ySw" className='link'  target='_blank'><FiDownload className='download' />Resume</Link>
   </ul>
   <input type='checkbox' id='check' checked={check} />
   <div className='mobilemenu'>
@@ -31,6 +33,7 @@ export default function Projects ({ check, setCheck}){
     <Link className='link' to='/'><li>Home</li></Link>
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
+    <Link to="https://bit.ly/3YC8ySw" className='link' id='mobileLink'  target='_blank'><FiDownload className='download' />Resume</Link>
   </ul>
   </div>
   <label htmlFor='check'><AiOutlineMenu className='menu' onClick={()=>{setCheck(!check)}} /></label>

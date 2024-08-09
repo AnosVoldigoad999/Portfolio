@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
+import {FiDownload} from 'react-icons/fi'
 import {AiOutlineMenu} from 'react-icons/ai'
 export default function About ({ check, setCheck}){
   useEffect(()=>{
@@ -12,6 +13,7 @@ return<>
     <Link className='link' to='/'><li>Home</li></Link>
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
+    <Link to="https://bit.ly/3YC8ySw" className='link'  target='_blank'><FiDownload className='download' />Resume</Link>
   </ul>
   <input type='checkbox' id='check' checked={check} />
   <div className='mobilemenu'>
@@ -19,6 +21,7 @@ return<>
     <Link className='link' to='/'><li>Home</li></Link>
     <Link className='link' to='/about'><li>About</li></Link>
     <Link className='link' to='/projects'><li>Projects</li></Link>
+    <Link to="https://bit.ly/3YC8ySw" className='link' id='mobileLink'  target='_blank'><FiDownload className='download' />Resume</Link>
   </ul>
   </div>
   <label htmlFor='check'><AiOutlineMenu className='menu' onClick={()=>{setCheck(!check)}} /></label>
