@@ -189,13 +189,14 @@ nav ul li{
 }
 
 .project .projectdes{
-  width: 100%;
+  width: 90%;
   text-align: center;
   /*border: 1px solid blue;*/
 }
 
 .project p{
   line-height: 20px;
+  
 }
 
 .project h4{
