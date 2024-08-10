@@ -52,7 +52,7 @@ export default function Projects ({ check, setCheck}){
         </>
       }
     return<>
-<nav>
+{/*<nav>
   <h1 className='logo'>Uzaymah.dev</h1>
   <ul>
     <Link className='link' to='/'><li>Home</li></Link>
@@ -70,9 +70,9 @@ export default function Projects ({ check, setCheck}){
   </ul>
   </div>
   <label htmlFor='check'><AiOutlineMenu className='menu' onClick={()=>{setCheck(!check)}} /></label>
-</nav>
+</nav>*/}
 <main className="projectmain" id="projects">
-   <h2>My Portfolio</h2>
+   <h2>Featured Projects</h2>
     {/*{projects.map((project, index)=>{
         return <div className="project" key={index}>
           <a target="_blank" href={project.siteLink} className={project.name}><img className="screenshots" alt={project.name} src={project.imageLink}  /></a>
