@@ -12,18 +12,18 @@ export default function Projects ({ check, setCheck}){
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 1
+      items: 5
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 1
+      items: 3
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1
+      breakpoint: { max: 1024, min: 800 },
+      items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 800, min: 0 },
       items: 1
     }
   };
@@ -91,16 +91,16 @@ export default function Projects ({ check, setCheck}){
     <Carousel showDots={true} customDot={<CustomDots />}  removeArrowOnDeviceType={["tablet", "mobile"]} responsive={responsive} className="caro" autoPlay={true} infinite={true} autoPlaySpeed={5000}>
     {projects.map((project, index)=>{
         return <div className="project" key={index}>
-          <a target="_blank" href={project.siteLink} className={project.name}><img className="screenshots" alt={project.name} src={project.imageLink}  /></a>
+          <img className="screenshots" alt={project.name} src={project.imageLink}  />
           <div className="projectdes">
         <h4>{project.name}</h4>
         <p>
-            {project.des} It is a front-end development challenge on <b><a target="blank" href="https://frontendmentor.io">Frontend Mentor</a></b>.
+            {project.des}
         </p>
-        <p>
-            Built with <a target="_blank" href='https://react.dev/'><b>React</b></a> and <a target="_blank" href='https://en.wikipedia.org/wiki/CSS'><b>CSS</b></a>
+        <p className="builtWith">
+          {project.builtWith}
         </p>
-        <p className="projectBottomP"><b><a target="_blank" href={project.siteLink}>Live site<RxExternalLink className="exlink" /></a></b>&nbsp; <b><a target="_blank" href={project.githubLink}><AiFillGithub className='github' />Github</a></b></p>
+        <p className="projectBottomP"><b><a target="_blank" href={project.siteLink}><RxExternalLink className="exlink" /></a></b>&nbsp; <b><a target="_blank" href={project.githubLink}><AiFillGithub className='github' /></a></b></p>
         </div>
         </div>
     })}
