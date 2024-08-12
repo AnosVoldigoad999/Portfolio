@@ -102,6 +102,9 @@ export const projects = [
         <a href='https://www.npmjs.com/package/react-router-dom' target='_blank'><span className='built'>
             React Router
         </span></a>
+        <a href='https://www.npmjs.com/package/axios' target='_blank'><span className='built'>
+            Axios
+        </span></a>
         </>,
         githubLink:"https://github.com/AnosVoldigoad999/Countries.git"   
     }

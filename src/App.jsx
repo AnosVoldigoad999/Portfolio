@@ -23,6 +23,7 @@ export default function App (){
       <a className='link' href='#home'><li>Home</li></a>
       <a className='link' href='#about'><li>About</li></a>
       <a className='link' href='#projects'><li>Projects</li></a>
+      <a className='link' href='https://drive.google.com/file/d/12qduSMUPof-9MVFky5UQ6kbyTERiUG9U/view?usp=drive_link' target='_blank'><li>Resume</li></a>
     </ul>
     <input type='checkbox' id='check' checked={check} />
     <div className='mobilemenu'>
@@ -30,6 +31,7 @@ export default function App (){
     <a className='link' href='#home'><li>Home</li></a>
       <a className='link' href='#about'><li>About</li></a>
       <a className='link' href='#projects'><li>Projects</li></a>
+      <a className='link' href='https://drive.google.com/file/d/12qduSMUPof-9MVFky5UQ6kbyTERiUG9U/view?usp=drive_link' target='_blank'><li>Resume</li></a>
     </ul>
     </div>
     <label htmlFor='check'><AiOutlineMenu className='menu' onClick={()=>{setCheck(!check)}} /></label>
