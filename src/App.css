@@ -85,7 +85,6 @@ nav ul li{
  /*border: 1px solid red;*/
   width: 100%;
   height: 100vh;
-  min-height: 740px;
   margin: 0px auto;
   margin-bottom: 2%;
   display: flex;
@@ -442,6 +441,7 @@ nav ul li:hover{
     /*margin-top: max(7vh, 30px);*/
     display: flex;
     width: 100vw;
+    min-height: 740px;
     margin-left: -8px;
     flex-direction: column-reverse;
     justify-content: center;
