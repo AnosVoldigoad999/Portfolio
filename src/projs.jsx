@@ -57,6 +57,9 @@ export const projects = [
         <a href='https://en.wikipedia.org/wiki/CSS' target='_blank'><span className='built'>
             Css
         </span></a>
+        <a href='https://www.npmjs.com/package/axios' target='_blank'><span className='built'>
+            Axios
+        </span></a>
         </>,
         githubLink:"https://github.com/AnosVoldigoad999/advice-generator"   
     }, {
