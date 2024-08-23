@@ -16,7 +16,7 @@ export const projects = [
     githubLink:"https://github.com/AnosVoldigoad999/managelandingpage"
     },{
         name:"Product Listing",
-        des:"A snazzy e-commerce page showcasing a fictional online store. With a responsive design and smooth functionality, it's a great place to 'shop' around!",
+        des:"A sleek product showcase featuring a vast array of items in a clean and organized space. With a responsive design and effortless browsing, it's the perfect spot to explore and discover new products!",
         imageLink:"/PICS/product_listing.png",
         builtWith: <>
         <a href='https://react.dev/' target='_blaink'><span className="built">
@@ -26,8 +26,8 @@ export const projects = [
             Css
         </span></a>
         </>,
-        siteLink:"https://e-commerce-page-flame.vercel.app/",
-        githubLink:"https://github.com/AnosVoldigoad999/E-commercePage"   
+        siteLink:"https://product-listing-sigma.vercel.app/",
+        githubLink:"https://github.com/AnosVoldigoad999/Product-Listing.git"   
     },{
         name:"E-commerce product page.",
         des:"A snazzy e-commerce page showcasing a fictional online store. With a responsive design and smooth functionality, it's a great place to 'shop' around!",
@@ -40,8 +40,8 @@ export const projects = [
             Css
         </span></a>
         </>,
-        siteLink:"https://product-listing-sigma.vercel.app/",
-        githubLink:"https://github.com/AnosVoldigoad999/Product-Listing"   
+          siteLink:"https://e-commerce-page-flame.vercel.app/",
+          githubLink:"https://github.com/AnosVoldigoad999/E-commercePage"  
     }, {
         name:"Todo App.",
         des:"A simple yet mighty todo list app built with React! Add tasks, mark them as done, and feel the productivity boost. Clean design, smooth functionality - get stuff done with ease!",
