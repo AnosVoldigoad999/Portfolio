@@ -209,7 +209,7 @@ nav ul li{
   padding-bottom: 12px;
 }
 .project:hover{
-  width: 85%;
+  scale: 1.05;
   cursor: pointer;
 }
 
@@ -253,6 +253,7 @@ nav ul li{
 
 .project p{
   line-height: 20px;
+  font-size: 0.9rem;
   /*font-weight: 600;*/
 }
 
@@ -291,6 +292,7 @@ label{
   height: 90%;
   min-height: 667px;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .project p{

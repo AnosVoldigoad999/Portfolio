@@ -7,6 +7,7 @@ import { projects } from "./projs"
 import { FaSquareCaretLeft, FaSquareCaretRight } from "react-icons/fa6";
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
+import {motion} from "framer-motion"
 export default function Projects ({ check, setCheck}){
 
   const responsive = {
@@ -88,9 +89,24 @@ export default function Projects ({ check, setCheck}){
         </div>
         </div>
     })}*/}
-    <Carousel showDots={true} customDot={<CustomDots />}  removeArrowOnDeviceType={["tablet", "mobile"]} responsive={responsive} className="caro" autoPlay={true} infinite={true} autoPlaySpeed={5000}>
+    <Carousel showDots={true} customDot={<CustomDots />}  removeArrowOnDeviceType={["tablet", "mobile"]} responsive={responsive} className="caro"  >
     {projects.map((project, index)=>{
-        return <div className="project" key={index}>
+        return <motion.div
+        initial={{
+          scale:0
+        }}
+        whileInView={{
+          scale:1
+        }}
+       
+        transition={{
+          ease:"backInOut",
+          duration:0.1
+        }}
+        exit={{
+          scale:0
+        }}
+        className="project" key={index}>
           <img className="screenshots" alt={project.name} src={project.imageLink}  />
           <div className="projectdes">
         <h4>{project.name}</h4>
@@ -102,7 +118,7 @@ export default function Projects ({ check, setCheck}){
         </p>
         <p className="projectBottomP"><b><a target="_blank" href={project.siteLink}><RxExternalLink className="exlink" /></a></b>&nbsp; <b><a target="_blank" href={project.githubLink}><AiFillGithub className='github' /></a></b></p>
         </div>
-        </div>
+        </motion.div>
     })}
         
     </Carousel>

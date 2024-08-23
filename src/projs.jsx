@@ -14,7 +14,21 @@ export const projects = [
     imageLink:"/PICS/manage.png",
     siteLink:"https://managelandingpage-ten.vercel.app/",
     githubLink:"https://github.com/AnosVoldigoad999/managelandingpage"
-    }, {
+    },{
+        name:"Product Listing",
+        des:"A snazzy e-commerce page showcasing a fictional online store. With a responsive design and smooth functionality, it's a great place to 'shop' around!",
+        imageLink:"/PICS/product_listing.png",
+        builtWith: <>
+        <a href='https://react.dev/' target='_blaink'><span className="built">
+            React
+        </span></a>
+        <a href='https://en.wikipedia.org/wiki/CSS' target='_blank'><span className='built'>
+            Css
+        </span></a>
+        </>,
+        siteLink:"https://e-commerce-page-flame.vercel.app/",
+        githubLink:"https://github.com/AnosVoldigoad999/E-commercePage"   
+    },{
         name:"E-commerce product page.",
         des:"A snazzy e-commerce page showcasing a fictional online store. With a responsive design and smooth functionality, it's a great place to 'shop' around!",
         imageLink:"/PICS/ecommerce.png",
@@ -26,8 +40,8 @@ export const projects = [
             Css
         </span></a>
         </>,
-        siteLink:"https://e-commerce-page-flame.vercel.app/",
-        githubLink:"https://github.com/AnosVoldigoad999/E-commercePage"   
+        siteLink:"https://product-listing-sigma.vercel.app/",
+        githubLink:"https://github.com/AnosVoldigoad999/Product-Listing"   
     }, {
         name:"Todo App.",
         des:"A simple yet mighty todo list app built with React! Add tasks, mark them as done, and feel the productivity boost. Clean design, smooth functionality - get stuff done with ease!",
